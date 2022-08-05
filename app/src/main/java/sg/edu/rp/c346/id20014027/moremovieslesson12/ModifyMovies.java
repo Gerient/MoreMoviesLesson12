@@ -67,7 +67,7 @@ public class ModifyMovies extends AppCompatActivity {
 
                 myBuilder.setTitle("Danger");
                 myBuilder.setMessage("Are you sure you want to delete this movie " + etTitle.getText().toString());
-                myBuilder.setCancelable(false);
+                myBuilder.setCancelable(true);
 
                 DBHelper dbh = new DBHelper(ModifyMovies.this);
                 dbh.deleteMovie(data.getId());
