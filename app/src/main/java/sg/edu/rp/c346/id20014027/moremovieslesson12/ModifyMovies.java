@@ -78,6 +78,7 @@ public class ModifyMovies extends AppCompatActivity {
                     public void onClick(DialogInterface dialogInterface, int i) {
                         dbh.deleteMovie(data.getId());
                         Toast.makeText(ModifyMovies.this, "The movie " + etTitle.getText().toString() + " has been successfully deleted", Toast.LENGTH_SHORT).show();
+                        finish();
                     }
                 });
                 myBuilder.setPositiveButton("CANCEL", null);
